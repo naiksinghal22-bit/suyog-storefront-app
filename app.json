@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Suyog Storefront",
+    "slug": "suyog-storefront-app",
+    "scheme": "suyogstorefront",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-router",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.suyogfashions.storefront"
+    },
+    "android": {
+      "package": "com.suyogfashions.storefront"
+    },
+    "extra": {
+      "projectName": "suyog-storefront-app",
+      "storefrontApiBaseUrl": "https://www.suyogfashions.com"
+    }
+  }
+}
