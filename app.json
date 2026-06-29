@@ -1,31 +1,59 @@
 {
   "expo": {
-    "name": "Suyog Storefront",
+    "name": "Suyog Fashions",
     "slug": "suyog-storefront-app",
     "scheme": "suyogstorefront",
     "version": "0.1.0",
+    "icon": "./assets/icon.png",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "updates": {
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/ae9369c2-7f34-4f58-854f-fa75fdca905b"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
     "plugins": [
       "expo-router",
-      "expo-notifications"
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#f3f6fb",
+          "image": "./assets/splash.png",
+          "imageWidth": 240
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.suyogfashions.storefront"
+      "bundleIdentifier": "com.suyogfashions.storefront",
+      "buildNumber": "4",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
-      "package": "com.suyogfashions.storefront"
+      "package": "com.suyogfashions.storefront",
+      "versionCode": 1
     },
     "extra": {
       "projectName": "suyog-storefront-app",
-      "storefrontApiBaseUrl": "https://www.suyogfashions.com"
+      "storefrontApiBaseUrl": "https://www.suyogfashions.com",
+      "router": {},
+      "eas": {
+        "projectId": "ae9369c2-7f34-4f58-854f-fa75fdca905b"
+      }
+    },
+    "owner": "suyogfashions",
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
